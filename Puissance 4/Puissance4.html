@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Puissance 4</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="Puissance4.css"/>
+		<script src="Puissance4.js"></script>
+		<script> window.onload = function(){Initialisation();}</script>
+	</head>
+
+	<body>
+	
+		<header>
+			<h1>Puissance 4</h1>
+		</header>
+			
+		<section id="main">
+			<div id="side" class="hidden">
+			</div>
+			
+			<div id="jeu" onmouseleave="ReverseOldPreview()">
+				<table id="grille">
+				</table>
+			</div>
+			
+			<div id="side">
+				<h2 class="center">Adversaire</h2>
+				
+				<div class="flex morePadding">
+					<button onclick="ChangeOpponent()" class="Menu"><-</button>
+					<label class="noMargin" id="Opponent">Joueur</label>
+					<button onclick="ChangeOpponent()" class="Menu">-></button>
+				</div>
+				<div id="IAContainer">
+					<div id="IADescription">
+						<h3 class="center noMargin morePadding">Niveau de l'IA</h3>
+						
+						<div class="flex morePadding">
+							<button onclick="ChangeAILevel(-1)" class="Menu"><-</button>
+							<p class="noMargin" id="AILevel">0</p>
+							<button onclick="ChangeAILevel(1)" class="Menu">-></button>
+						</div>
+						
+						
+							<h3 class="center noMargin">Description</h3>
+							<div class="center morePadding">
+								<label class="Variante Menu" onclick="ShowDescription()" id="DescriptionButton">Montrer</label>
+							</div>
+							<p id="description" class="center">TEST</p>
+						
+					</div>
+				</div>
+				<div class="center">
+					<button onclick="Initialisation()" class="restart">Restart</button>
+				</div>
+			</div>
+		</section>
+		<section class="center">
+			<h3 id="tourJoueur">Tour Joueur :</h3>
+		</section>
+	
+	</body>
+
+</html>

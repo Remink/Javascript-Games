@@ -1,0 +1,114 @@
+body{
+	background-color:DodgerBlue;
+
+}
+
+table{
+	border-collapse : collapse;
+}
+
+.case {
+	background-color:CornflowerBlue;
+	width : 26px;
+	height : 26px;
+	border-collapse : collapse;
+}
+
+.caseNoire {
+	background-color : silver;
+	
+	
+	
+	border-collapse : collapse;
+}
+
+.head0{
+	background-color : orange;
+}
+
+.head1{
+	background-color : blue;
+}
+
+
+h1{
+	text-align:center;
+}
+.center{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	text-align:center;
+}
+
+.parametres, .joueurs{
+	background-color: rgb(30 174 255);
+	width:275px;
+	height:400px;
+	border-radius:5%;
+	border:2px solid;
+	
+}
+
+
+
+.flex{
+	display:flex;
+	justify-content:space-around;
+}
+
+label{
+	font-size:2em;
+}
+
+.Variante{
+	border:2px black solid;
+	Background-color:gray;
+	user-select:none;
+}
+
+#StartButton{
+	margin-top:15px;
+	height:40px;
+	width:80px;
+}
+
+.Atributes{
+	display:none;
+}
+
+.title{
+	margin:14px;
+}
+
+footer{
+	border:1px black dotted;
+	font-size:10px;;
+}
+
+@media screen and (max-width: 1066px)
+{
+   #Left{
+	   order:1;
+   }
+}
+
+@media screen and (max-width: 600px)
+{
+  .case{
+	width : 22px;
+	height : 22px;
+  }
+  
+  .parametres, .joueurs{
+	  width:250px;
+	  height:350px;
+  }
+}

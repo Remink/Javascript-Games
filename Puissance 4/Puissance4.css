@@ -1,0 +1,135 @@
+body{
+	background-color:DodgerBlue;
+	
+}
+
+header{
+	display:flex;
+	justify-content:center;
+}
+
+h1{
+	margin:12px;
+	
+}
+
+table{
+	background-color:Blue;
+	border-radius:5%;
+	border-spacing:14px;
+}
+
+.case{
+	border:2px black solid;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background-color:lightBlue;
+	cursor:pointer;
+	text-align:center;
+}
+
+#main{
+	display:flex;
+	justify-content:space-around;
+}
+
+#side{
+	background-color: rgb(30 174 255);
+	width:275px;
+	height:450px;
+	border-radius:5%;
+	border:2px solid;
+}
+
+.hidden{
+	opacity:0;
+}
+
+.joueur1{
+	background-color:red;
+}
+
+.preview{
+	opacity:0.65;
+}
+
+.joueur2{
+	background-color:yellow;
+	
+}
+
+.center{
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+
+.flex{
+	display:flex;
+	justify-content:space-around;
+}
+
+.noMargin{
+	margin:0px;
+	padding:0px;
+}
+
+.morePadding{
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+.restart{
+	height:35px;
+	width:70px;
+	cursor:pointer
+}
+
+#Opponent{
+	width:40px;
+	text-align:center;
+}
+
+#IADescription{
+	
+	display:none
+}
+
+.Variante{
+	
+	text-decoration:underline;
+	font-size:1.2em;
+	opacity:0.8;
+	cursor:pointer
+}
+
+
+label{
+	font-size:1.1em;
+}
+
+.Variante:hover{
+	opacity:1;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.hidden{
+		display:none;
+	}
+}
+
+.Menu{
+	cursor:pointer
+
+}
+
+#IAContainer{
+	height:290px;
+}
+
+#description{
+	display:none;
+	font-size:1.1em;
+}

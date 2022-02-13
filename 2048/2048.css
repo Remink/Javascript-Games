@@ -1,0 +1,123 @@
+body{
+	background-color: DodgerBlue;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+	
+	
+}
+
+header{
+	
+	display:flex;
+	justify-content:space-around;
+
+	
+}
+h1,h2,h3{
+	text-align:center;
+	
+	margin-bottom:0px;
+	margin-top:15px;
+}
+
+.fill{
+	width:200px;
+}
+label{
+	color:AliceBlue;
+	font-size:1.5em;
+}
+
+.number{
+	text-align:center;
+	padding:0;
+	margin:0;
+	user-select :none;
+}
+
+button{
+	height:30px;
+}
+
+#game{
+	display:flex;
+	justify-content:center;
+	
+}
+
+#bottom{
+	display:flex;
+	justify-content:center;
+}
+
+#grid{
+	border-collapse: separate;
+	background-color:DeepSkyBlue;
+	border-spacing:15px;
+	border-radius:5%;
+	width : 480px;
+	max-width : 480px;
+	height : 480px;
+	max-height : 480px;
+}
+
+.tile0{
+	background-color: turquoise;
+	border-radius:15%;
+	
+	
+}
+.tile2{
+	background-color: yellow;
+	border-radius:15%;
+	
+}
+.tile4{
+	background-color: Darkorange;
+	border-radius:15%;
+	
+}
+.tile8{
+	background-color: Orangered;
+	border-radius:15%;
+}
+.tile16{
+	background-color: red;
+	border-radius:15%;
+}
+
+.tile32{
+	background-color: DeepPink;
+	border-radius:15%;
+}
+
+.tile64{
+	background-color: MediumVioletRed;
+	border-radius:15%;
+}
+
+.tile128{
+	
+	background-color: BlueViolet;
+	border-radius:15%;
+}
+
+.tile256{
+	
+	background-color: DarkMagenta;
+	border-radius:15%;
+}
+
+.tile512{
+	background-color: Indigo;
+	border-radius:15%;
+}
+
+.tile1024{
+	background-color: Blue;
+	border-radius:15%;
+}
+
+.tile2048{
+	background-color: RoyalBlue;
+	border-radius:15%;
+}

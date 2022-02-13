@@ -1,0 +1,49 @@
+body{
+	color:white;
+	background-color:black;
+}
+
+#grille{
+	border-collapse : collapse;
+	color:black;
+	
+}
+
+.case, .caseMarquee {
+	background: gray ;
+	border : 2px black solid;
+	width : 20px;
+	height : 20px;
+	border-collapse : collapse;
+	text-align:center;
+}
+.caseMarquee {
+	background: lime;
+}
+
+div{
+	display:flex;
+	justify-content:center;
+	
+}
+
+header{
+	display:flex;
+	justify-content:space-around;
+	
+}
+
+button {
+	width : 100px;
+	height : 50px;
+}
+
+#tailleGrille {
+	display:none;
+}
+
+.menu {
+	width: 150px;
+	
+}
+

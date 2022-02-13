@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>2048</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="2048.css"/>
+		<script src="2048.js"></script>
+		<script> window.onload = function(){Initialisation();}</script>
+	</head>
+
+	<body>
+	
+		<header>
+			<div>
+				<h3>Score</h3>
+				<h3 id="Score">0</h3>
+			</div>
+			
+			<h1>2048</h1>
+			
+			<div>
+				<h3>Mouvements</h3>
+				<h3 id="Moves">0</h3>
+			</div>
+		</header>
+		<section>
+			<div id="game">
+				<table id="grid">
+				</table>
+			</div>
+		</section>
+		
+		<section id="bottom">
+			<div class="fill">
+			</div>
+			<button onclick="NewGame()">Restart</button>
+			
+			<div class="fill">
+				<form id="FormSize">
+					<input type="radio" name="size" checked value=4>
+					<label>4x4</label>
+					
+					<input type="radio" name="size" value=5>
+					<label>5x5</label>
+				</form>
+			</div>
+		</section>
+	
+	</body>
+
+</html>

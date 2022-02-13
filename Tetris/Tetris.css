@@ -1,0 +1,69 @@
+
+body{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image:url('Background.png');
+	color:white;
+	
+	text-align:center;
+}
+
+h1{
+	font-size:2em;
+	margin-bottom:0px;
+	margin-top:9px;
+}
+
+table{
+	border-collapse : collapse;
+}
+
+.case {
+	background-color:gray;
+	border: 2px black solid;
+	width : 21px;
+	height : 21px;
+	border-collapse : collapse;
+}
+
+.caseVide{
+	width : 15px;
+	height : 15px;
+	border-collapse : collapse;
+	border:2px mediumblue solid;
+}
+
+#game{
+	text-align:center;
+	display:flex;
+	justify-content:center;
+}
+
+.menu{
+	margin-left:60px;
+	margin-right:60px;
+	margin-top:15px;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+	
+}
+
+#NextPiece0,#NextPiece1,#NextPiece2{
+	border:3px black solid;
+	border-bottom:1px black solid
+	width:100px;
+	background-color:mediumblue;
+}
+
+button{
+	margin-top:20px;
+	width:60px;
+	height:30px;
+}
+
+h2{
+	margin-bottom:0px;
+}

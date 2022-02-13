@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Can't Stop</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="CantStop.css"/>
+		<script src="CantStop.js"></script>
+		<script> window.onload = function(){initialisation();}</script>
+	</head>
+
+	<body>
+	
+		<header>
+			
+		</header>
+		<section>
+			<div>
+				<h1>Can't Stop</h1>
+			</div>
+			<div>
+				<table id="plateau"></table>
+			</div>
+		</section>
+		<section id="espaceDe">
+		<h2>Entrez le nom des joueurs</h2>
+		<form>
+
+			<label>Joueur 1</label>
+			<input id="nomjoueur1" type="text"> <br> <br>
+			<label>Joueur 2</label>
+			<input id="nomjoueur2" type="text"> <br> <br>
+			<label>Joueur 3</label>
+			<input id="nomjoueur3" type="text"> <br> <br>
+			<label>Joueur 4</label>
+			<input id="nomjoueur4" type="text"> <br> <br>
+			<label>Nombre de points gagnants</label>
+			<input id="pointsGagnants" type="number" min=1 max=11> <br> <br>
+			<input id="buttonjoueur" type="button" onclick="Joueurs()" value="valider">
+			<input id="buttonAuto" type="button" onclick="AutoPlay()" value="Jeu Automatique !"
+		</form>
+			
+		</section>
+	
+	</body>
+
+</html>

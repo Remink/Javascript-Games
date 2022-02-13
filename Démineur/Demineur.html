@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Démineur</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="Demineur.css"/>
+		<script src="Demineur.js"></script>
+		<script> window.onload = function(){initialisation();}</script>
+	</head>
+
+	<body>
+	
+		<header>
+			<button class="menu" onclick="Restart(10,10,16)">Nouvelle partie  Petit</button>
+			<button class="menu"onclick="Restart(16,16,40)">Nouvelle partie  Moyen</button>
+			<button class="menu"onclick="Restart(16,32,100)">Nouvelle partie  Grand</button>
+		</header>
+		<section>
+		<div>
+			<h1>Démineur</h1>
+		</div>
+		
+		<div>
+			<table id="grille">
+			</table>
+			
+		</div>
+		<div>
+			<button onclick="PlacerMine()">Placer une Mine</button>
+			<button onclick="initialisation()">Recommencer</button>
+		</div>
+		<div>
+			
+			<form id="tailleGrille">
+				<input id="longueur" type="number" placeholder="Longueur de la grille">
+				<input id="largeur" type="number" placeholder="Largeur de la grille">
+				<input id="nombreMines" type="number" placeholder="Nombre de mines">
+				<input id="buttonjoueur1" type="button" onclick="Restart()" value="valider">
+			</form>
+			
+		</div>
+		<div>
+			<table>
+				<tr>
+					<br><h3>Mines Restantes :</h3></br>
+					<br><h3 id="mine"></h3></br>
+				</tr>
+			</table>
+		</div>
+		</section>
+	
+	</body>
+
+</html>

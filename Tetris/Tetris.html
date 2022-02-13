@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Tetris</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="Tetris.css"/>
+		<script src="Tetris.js"></script>
+		<script> window.onload = function(){initialisation();}</script>
+	</head>
+	<body>
+		<headers>
+			<h1>Tetris</h1>
+		</headers>
+		<section id="game">
+			<div class="menu">
+				<h2>Level :</h2>
+				<h2 id="level">0</h2>
+				<br>
+				<h2>Points :</h2>
+				<h2 id="points">0</h2>
+				<h2>Lines to<br>next level</h2>
+				<h2 id="linesToNextLevel">1</h2>
+			</div>
+			<table id="grille">
+			</table>
+			<div class="menu">
+				<h2>Next Piece :</h2>
+				<table id="NextPiece0">
+				
+				</table>
+				<table id="NextPiece1">
+				
+				</table>
+				<table id="NextPiece2">
+				
+				</table>
+				<button onclick="Restart()">Start</button>
+			</div>
+			
+		</section>
+	
+	</body>
+
+</html>

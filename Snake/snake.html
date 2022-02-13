@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Snake</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="snake.css"/>
+	<script src="snake.js"></script>
+	<script> window.onload = function(){initialisation();}</script>
+</head>
+<body>
+	
+		
+		<label class="center title">Dual Snake</label>
+		<section>
+			<div id="Left">
+				<div class="parametres">
+					<h1>Variantes</h1>
+					<div class="flex">
+					
+						<div class="colonne">
+							<h3 class="Variante" onclick="Activate('EatToWin')" id="EatToWin">Eat to win</h3>
+							
+							<div id="EatToWinAtributes" class="Atributes">
+								<p>Respawn time</p>
+								
+								<select id="RespawnSeconds">
+									<option value=0>0s</option>
+									<option value=1>1s</option>
+									<option value=2>2s</option>
+									<option value=3 selected>3s</option>
+									<option value=4>4s</option>
+									<option value=5>5s</option>
+								</select>
+								
+								<p>Points to win</p>
+								
+								<select id="PointsToWin">
+									<option value=10>10</option>
+									<option value=15>15</option>
+									<option value=20 selected>20</option>
+									<option value=25>25</option>
+									<option value=30>30</option>
+									<option value=1000>∞</option>
+								</select>
+								
+								<p>Instant Despawn</p>
+								<select id="InstantDespawn">
+									<option value=1>Yes</option>
+									<option value=0 selected>No</option>
+								</select>
+								
+								<div>
+								<button onclick="CloseAtributes('EatToWinAtributes')">Ok !</button>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="colonne">
+							<h3 class="Variante" onclick="Activate('WallEmergence')" id="WallEmergence">Wall emergence</h3>
+						</div>
+					</div>
+				</div>
+				<h3>Real Time</h3>
+				<label id="Time0">0:00</label>
+			</div>
+		
+			<div class ="jeu" id="principal">
+				
+				<table id="grille">
+				</table>
+				
+				<div class="flex">
+					
+					<h2>Joueur 1</h2>
+					<button onclick="Start()" id="StartButton" class="center">Start</button>
+					<h2>Joueur 2</h2>
+				</div>
+				<div class="flex">
+					
+					<label id="Score0">0</label>
+					<label></label>
+					<label id="Score1">0</label>
+				</div>
+			
+			
+			</div>
+			<div id="Right">
+				<div class="parametres">
+					<h1>Parametres</h1>
+				
+					<div class="flex">
+					
+						<div class="colonne">
+							<p class="center">Nombre de joueurs</p>
+							
+							
+							<form class="center">
+								<select id="Nbjoueurs">
+									<option value=1>1</option>
+									<option value=2>2</option>
+								</select>
+							</form>
+							
+							
+							
+							<p class="center">Taille de départ :<p>
+							<form class="center">
+								<select id="TailleDepart">
+									<option value=1>1</option>
+									<option value=3 selected>3</option>
+									<option value=4>4</option>
+									<option value=5>5</option>
+									<option value=6>6</option>
+									<option value=20>20</option>
+								</select>
+							</form>
+						</div>
+						
+						<div class="colonne">
+							<p class="center">Nombre de pommes</p>
+							
+							
+							<form class="center">
+								<select id="Nbpommes">
+									<option value=1 selected>1</option>
+									<option value=2>2</option>
+									<option value=3>3</option>
+									<option value=4>4</option>
+									<option value=20>20</option>
+								</select>
+							</form>
+							
+							
+							
+							<p class="center">Vitesse<p>
+							<form class="center">
+								<select id="Vitesse">
+									<option value=12>5/sec Très Lent</option>
+									<option value=10>6/sec Lent</option>
+									<option value=9>6.66/sec Normal -</option>
+									<option value=8 selected>7.5/sec Normal +</option>
+									<option value=7>8.5/sec Plus Rapide</option>
+									<option value=6>10/sec Rapide</option>
+									<option value=5>12/sec Très Rapide</option>
+									<option value=4>15/sec HyperVitesse !</option>
+									<option value=2>30/sec Vitesse Lumière ??</option>
+								</select>
+							</form>
+						</div>
+					</div>
+					<h3>Touches</h3>
+					<p>Joueur 1 : Flèches</p>
+					<p>Joueur 2 : ZQSD</p>
+				</div>
+				<h3>In Game Time</h3>
+				<label id="Time1"></label>
+			</div>
+			
+			
+		
+			
+			
+		
+		
+		
+		</section>
+		
+		<footer>
+			<label>Made by Rémi Renard - © 2021</label>
+		</footer>
+		
+		
+		
+	
+</body>
+</html>
