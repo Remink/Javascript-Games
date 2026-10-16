@@ -2,20 +2,23 @@
 
 Ce dossier contient une collection de jeux web que j'ai développé lorsque j'était au lycée. Il contient :
 
-##Snake :
+## Snake :
 Jeu de Snake jouable à deux joueurs, avec différentes variantes. C'est le projet de la liste dont je suis le plus fier
 
-##Tetris :
+## Tetris :
 Jeu de Tetris complet
 
-##Puissance 4 :
+## Puissance 4 :
 Puissance 4 jouable à 2 ou bien seul contre des IA (hardcodées) de différents niveaux de difficulté
 
-##2048 :
+## 2048 :
 Jeu de 2048, qui pourrait être amélioré en ajoutant des animations.
 
-##CantStop :
+## CantStop :
 Implémentation d'un jeu de stop ou encore s'appelant Cant Stop, jouable de 1 à 4 joueurs
 
-##Lièvre et Chien :
+## Lièvre et Chien :
 Jeu du lièvre et du chien décrit sur cette page : https://fr.wikipedia.org/wiki/Jeu_du_lièvre_et_du_chien
+
+## Démineur :
+Jeu de démineur, qui pourrait être amélioré en effectuant un parcours de graphe pour révéler toutes les cases vides d'un même groupe au lieu d'uniquement les 8 adjacentes.
